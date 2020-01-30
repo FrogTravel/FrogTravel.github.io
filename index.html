@@ -50,11 +50,12 @@ helpful information please feel free to write to my email green.frog.travel@gmai
 			}
 
 			#short-bio{
-				float: left;
 				width: 260px;
 				border-right: 1px solid;
 				padding-right: 20px;
-				position: fixed;
+				position: sticky;
+				top: 10px;
+				float: left;
 			}
 
 			#portfolio{
@@ -83,23 +84,17 @@ helpful information please feel free to write to my email green.frog.travel@gmai
 			}
 
 			#date, #otherdate {
-				float: left;
 				width: 226px;
 				height: 40px;
 				font-weight: bold;
 				font-size: 20px;
+				margin: 0;
+				flex-shrink: 0;
 			}
 
 			.company_name { 
 				font-size: 20px;
-				margin-bottom: -5px;
-			}
-
-			#otherdate{
-				float: left;
-				width: 220px;
-				height: 750px;
-
+				margin: 0;
 			}
 
 			.smallheading {
@@ -108,6 +103,15 @@ helpful information please feel free to write to my email green.frog.travel@gmai
 
 			#name {
 				font-size: 25px;
+				margin-bottom: 0;
+			}
+
+			#experience {
+				display: flex;
+			}
+
+			#work_title {
+				margin-top: 0;
 			}
 
 			</style>
@@ -117,18 +121,17 @@ helpful information please feel free to write to my email green.frog.travel@gmai
 		</div>
 		<div id="out_rect">
 			<div id="rect">
-
-
 				<div id="short-bio">
 					<img id="me" src="me350350.jpg">
 					<h3 id="name">Levchenko Ekaterina</h3>
+					<h4 id="work_title">Middle Android Developer</h4>
 					<p>Hi, I'm a 4-year undergraduate student and an Android developer for more than 5 years.</p>
 					<h4 class="smallheading">Location</h4>
 					<p>Innopolis, Russia</p>
 					<h4 class="smallheading">Email</h4>
 					<p><a href="mailto:green.frog.travel@gmail.com">green.frog.travel@gmail.com</a></p>
 					<h4 class="smallheading">GitHub</h4>
-					<p><a href="https://github.com/FrogTravel">https://github.com/FrogTravel</a></p>
+					<p><a href="https://github.com/FrogTravel" target="_blank">https://github.com/FrogTravel</a></p>
 				</div>
 
 
@@ -139,8 +142,8 @@ helpful information please feel free to write to my email green.frog.travel@gmai
 						<p id="date" style="height: 80px">Sep. 2019 - Nov. 2019:</p>
 						<div id="info">
 							<h4 class="company_name">Siemens</h4>
-							<p>Developing GUI for visualization of 3D models and approximating the difference between the real assembled model with the perfect 3D CAD model. 
-							</br>&#8729;PyQt 5, Python, Open Cascade</p>
+							<p>Developed GUI for visualization of 3D models and approximation of the difference between the real assembled model and the perfect 3D CAD model. 
+							<br>&#8729; PyQt 5, Python, Open Cascade</p>
 						</div>
 					</div>
 
@@ -148,8 +151,8 @@ helpful information please feel free to write to my email green.frog.travel@gmai
 						<p id="date" style="height: 100px">May 2019 - Aug. 2019:</p>
 						<div id="info">
 							<h4 class="company_name">Stride - Suvar</h4>
-							<p>Developing a mobile application for Suvar company to make a more convenient client for apartment buyers. I developed a full mobile application except for several screens. <a href="https://play.google.com/store/apps/details?id=one.stride.suvar"/>Link to Google Play</a>
-							</br>&#8729;Kotlin, Retrofit, MVP, Moxy, Espresso, RxJava/RxAndroid</p>
+							<p>Developed a mobile application for Suvar company to make a more convenient client for apartment buyers. I implemented the whole mobile application except for several screens. <a href="https://play.google.com/store/apps/details?id=one.stride.suvar" target="_blank">Link to Google Play</a>
+							<br>&#8729; Kotlin, Retrofit, MVP, Moxy, Espresso, RxJava/RxAndroid</p>
 						</div>
 					</div>
 
@@ -157,8 +160,8 @@ helpful information please feel free to write to my email green.frog.travel@gmai
 						<p id="date" style="height: 100px">Jan. 2019 - May 2019:</p>
 						<div id="info">
 							<h4 class="company_name">Industrial Project in Acronis</h4>
-							<p>Developing a faster backup solution with the Research and Development Dept. We made an experiment stand for them with proof of the concept.  
-							</br>&#8729; Python, C, C++, WINAPI, Jira</p>
+							<p>Developed a faster backup solution with the Research and Development Dept. We made an experiment stand for them with a proof of the concept.  
+							<br>&#8729; Python, C, C++, WINAPI, Jira</p>
 						</div>
 					</div>
 
@@ -167,8 +170,8 @@ helpful information please feel free to write to my email green.frog.travel@gmai
 						<p id="date" style="height: 100px">May 2018 - Aug. 2018:</p>
 						<div id="info">
 							<h4 class="company_name">Internship in MTS IT</h4>
-							<p>Developing a mobile application for selling sim cards. Refactoring of legacy code using MVVM pattern and Kotlin. Learning of Android Architecture Components (AAC). 
-							</br>&#8729;Kotlin, Java, Retrofit, MVVM, AAC, DataBinding, OkHttp, Espresso, JUnit</p>
+							<p>Developed a mobile application for selling sim cards. Refactored legacy code using MVVM pattern and Kotlin. Learned Android Architecture Components. 
+							<br>&#8729; Kotlin, Java, Retrofit, MVVM, AAC, DataBinding, OkHttp, Espresso, JUnit</p>
 						</div>
 					</div>
 					
@@ -176,14 +179,14 @@ helpful information please feel free to write to my email green.frog.travel@gmai
 						<p id="date" style="height: 100px">May 2017 - July 2017:</p>
 						<div id="info">
 							<h4 class="company_name">Internship in InTour24. </h4>
-							<p>Developing a mobile application for tourism services in the Republic of Tatarstan.  </br>&#8729; Java, RXJava, SQLite, Retrofit, ButterKnife, MVP, TinkoffSDK, Google Maps API, Picasso</p>
+							<p>Developed a mobile application for tourism services in the Republic of Tatarstan.  <br>&#8729; Java, RXJava, SQLite, Retrofit, ButterKnife, MVP, TinkoffSDK, Google Maps API, Picasso</p>
 						</div>
 					</div>
 					<div id="experience">
 						<p id="date">Sep. 2015 - Dec. 2015:</p>
 						<div id="info">
 							<h4 class="company_name">D'ONEs - Tokyo DDOS security company</h4>
-							<p>Supporting development of a business model.</p>
+							<p>Supported development of a business model.</p>
 						</div>
 					</div>
 
@@ -198,58 +201,63 @@ helpful information please feel free to write to my email green.frog.travel@gmai
 					<div id="experience">
 
 						<p id="otherdate">Other:</p>
-						<div id="info">
-							<h4 class="company_name">WINNER of HackUniversity 2019 Hackathon</h4>
-							<p>
-							<b>First place</b> in nomination blockchain with navigation application that confirms your path with blockchain technology. (Hard to explain in few sentences, feel free to ask me if you are interested)
-							</p>
-						</div>
-						<div id="info">
-							<h4 class="company_name">UNE Russian - Accentuation</h4>
-							<p>Android application for helping scholars in preparation for the standardized test when graduating from school. It is in the top 200 of Russian educational apps with more than <b>200 000 downloads</b>.
-							</br><a href="https://play.google.com/store/apps/details?id=com.education.frogtravel.ege4task">Link to Google Play</a>
-							</br>&#8729; Kotlin, Java, SQLite, ButterKnife, MVP</p>
+						<div>
+							<div id="info">
+								<h4 class="company_name">WINNER of HackUniversity 2019 Hackathon</h4>
+								<p>
+								<b>First place</b> in nomination blockchain with navigation application that confirms your path with blockchain technology. (Hard to explain in few sentences, feel free to ask me if you are interested)
+								</p>
+							</div>
+							<div id="info">
+								<h4 class="company_name">UNE Russian - Accentuation</h4>
+								<p>Android application for helping scholars in preparation for the standardized test when graduating from school. It is in the top 200 of Russian educational apps with more than <b>217 000 downloads</b>.
+								<br><a href="https://play.google.com/store/apps/details?id=com.education.frogtravel.ege4task" target="_blank">Link to Google Play</a>
+								<br>&#8729; Kotlin, Java, SQLite, ButterKnife, MVP</p>
+							</div>
+
+							<div id="info">
+								<h4 class="company_name">UNE Russian - Grammar</h4>
+								<p>The same as previous but with more focuse on Russian Grammar part. It is in the top 200 of Russian educational apps with more than <b>27 000 downloads</b>.
+								<br><a href="https://play.google.com/store/apps/details?id=com.education.frogtravel.ege8task" target="_blank">Link to Google Play</a>
+								<br>&#8729; Kotlin, Java, SQLite, ButterKnife, MVP</p>
+							</div>
+
+							<div id="info">
+								<h4 class="company_name">ArchCityHack Hackathon</h4>
+								<p>Optimizing of travel path between state institutions. <a href="https://github.com/andrew-it/In-Tempore" target="_blank">https://github.com/andrew-it/In-Tempore</a><br>&#8729; Java, Google Maps API.</p>
+							</div>
 						</div>
 
-						<div id="info">
-							<h4 class="company_name">UNE Russian - Grammar</h4>
-							<p>The same as previous but with more focuse on Russian Grammar part. It is in the top 200 of Russian educational apps with more than <b>27 000 downloads</b>.
-							</br><a href="https://play.google.com/store/apps/details?id=com.education.frogtravel.ege8task">Link to Google Play</a>
-							</br>&#8729; Kotlin, Java, SQLite, ButterKnife, MVP</p>
-						</div>
+						
+					</div>
 
-						<div id="info">
-							<h4 class="company_name">ArchCityHack Hackathon</h4>
-							<p>Optimizing of travel path between state institutions. <a href="https://github.com/andrew-it/In-Tempore" target="_blank">https://github.com/andrew-it/In-Tempore</a></br>&#8729; Java, Google Maps API.</p>
-						</div>
+					<div id="info">
+						<h4 class="company_name">Example projects on GitHub:</h4>
+						<p><a href="https://github.com/FrogTravel/CSGithub" target="_blank">https://github.com/FrogTravel/CSGithub</a><br>    &#8729;Java, Retrofit, RXAndroid/RXJava, Dagger 2, ButterKnife, Picasso
+						<br>  
+						<a href="https://github.com/FrogTravel/StepikAPI" target="_blank">https://github.com/FrogTravel/StepikAPI</a><br>    &#8729;Kotlin, Retrofit, OkHttp, Gson, ButterKnife, RXAndroid/RXJava, Glide</p>
+					</div>
 
-						<div id="info">
-							<h4 class="company_name"><a href="https://play.google.com/store/apps/dev?id=4722964004027806644">Link to my Google Play</a></h4>
-						</div>
-
-						<div id="info">
-							<h4 class="company_name">Example projects on GitHub:</h4>
-							<p><a href="https://github.com/FrogTravel/CSGithub" target="_blank">https://github.com/FrogTravel/CSGithub</a></br>    &#8729;Java, Retrofit, RXAndroid/RXJava, Dagger 2, ButterKnife, Picasso
-							</br>  
-							<a href="https://github.com/FrogTravel/StepikAPI" target="_blank">https://github.com/FrogTravel/StepikAPI</a></br>    &#8729;Kotlin, Retrofit, OkHttp, Gson, ButterKnife, RXAndroid/RXJava, Glide</p>
-						</div>
+					<div id="info">
+						<h4 class="company_name"><a href="https://play.google.com/store/apps/dev?id=4722964004027806644" target="_blank">Link to my Google Play</a></h4>
 					</div>
 
 					<h2>Accomplishments and skills</h2>
 					<p>
 					&#8729; <b>Winner</b> of HackUniversity 2019 Hackathon
-					</br>&#8729; Android developer for <b>more than 5 years</b>
-</br>&#8729; Studied at <b>Seoul National University</b> as an exchange student for one semester
-</br>&#8729; The leader of Android Development club in the university 
-</br>&#8729; Participant of organization team of Google Development Group in Kazan
-</br>&#8729; Published an article on <a href="https://habr.com/post/341548/">Habrahabr (in Russian) about Google Maps API.</a>
+					<br>&#8729; Android developer for <b>more than 5 years</b>
+<br>&#8729; Studied at <b>Seoul National University</b> as an exchange student for one semester
+<br>&#8729; Studied at <b>Samsung IT&amp;SW junior school</b> 
+<br>&#8729; The leader of Android Development club in the university 
+<br>&#8729; Participant of organization team of Google Development Group in Kazan
+<br>&#8729; Published an article on <a href="https://habr.com/post/341548/" target="_blank">Habrahabr (in Russian) about Google Maps API.</a>
 					</p>
 					<h2>Technology Summary</h2>
 					<p>&#8729; Languages: Java, Kotlin, Scala, SQLite, C, C++
-</br>&#8729; Android Architecture Components (Navigation, Room, ViewModel etc.), Retrofit, Realtime Database (Firebase), Dagger2, Koin 2.0, DataBinding, Glide, RXJava, ButterKnife, Google Maps API, HereMapsApi, OkHttp, Tinkoff SDK.
-</br>&#8729; Tests via Espresso, Mockito, Robolectric. Unit tests (JUnit5).
-</br>&#8729; MVVM, MVP, MVI, MVC.
-</br>&#8729; Development tools: Android Studio, IntelliJ IDEA, Git, Sketch, Jira.</p>
+<br>&#8729; Android Architecture Components (Navigation, Room, ViewModel etc.), Retrofit, Realtime Database (Firebase), Dagger2, Koin 2.0, DataBinding, Glide, RXJava, ButterKnife, Google Maps API, HereMapsApi, OkHttp, Tinkoff SDK.
+<br>&#8729; Tests via Espresso, Mockito, Robolectric. Unit tests (JUnit5).
+<br>&#8729; MVVM, MVP, MVI, MVC.
+<br>&#8729; Development tools: Android Studio, IntelliJ IDEA, Git, Sketch, Jira.</p>
 				</div>
 			</div>
 		</div>
